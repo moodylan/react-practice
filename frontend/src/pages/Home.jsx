@@ -5,10 +5,10 @@ function Home() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const movies = [
-    {id: 1, title: "The Godfather", year: "1972"},
-    {id: 2, title: "The Dark Knight", year: "2008"},
-    {id: 3, title: "Interstellar", year: "2014"},
-    {id: 4, title: "Dune: Part Two", year:"2024"},
+    {id: 1, title: "The Godfather", release_date: "1972"},
+    {id: 2, title: "The Dark Knight", release_date: "2008"},
+    {id: 3, title: "Interstellar", release_date: "2014"},
+    {id: 4, title: "Dune: Part Two", release_date:"2024"},
   ];
 
   const handleSearch = () =>{
@@ -34,7 +34,7 @@ function Home() {
     <div className="movies-grid">
       {movies.map(
         (movie) => 
-          movie.title.toLowerCase().startsWith(searchQuery) && (
+         ( 
             <MovieCard movie={movie} key={movie.id}/>
         )
       )}
