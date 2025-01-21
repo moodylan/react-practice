@@ -1,8 +1,8 @@
-import './App.css'
-import Favorites from "./pages/Favorites"
-import Home from "./pages/Home"
-import {Routes, Route} from "react-router-dom"
-import NavBar from "./components/NavBar"
+import './css/App.css';
+import Favorites from "./pages/Favorites";
+import Home from "./pages/Home";
+import {Routes, Route} from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 function App() {  
   return (
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
